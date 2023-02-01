@@ -22,7 +22,7 @@ response = requests.get(img_url)
 with open(image_filepath, "wb") as file:
     file.write(response.content)
 
-
+# Display on Streamlit Web App
 st.title(title)
 st.image(img_url)
 st.write(explanation)
